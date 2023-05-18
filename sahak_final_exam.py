@@ -27,6 +27,6 @@ else:
     image=Image.open(file)
     st.image(image,use_column_width=True)
     prediction=import_and_predict(image,model)
-    class_names = ['yawn', 'no_yawn', 'Closed', 'Open']
+    class_names = ['yawn', 'Open', 'no_yawn', 'Closed']
     string="OUTPUT : "+class_names[np.argmax(prediction)]
     st.success(string)
