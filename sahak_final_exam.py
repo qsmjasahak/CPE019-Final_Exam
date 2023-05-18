@@ -3,7 +3,7 @@ import tensorflow as tf
 
 @st.cache_resource
 def load_model():
-  model=tf.keras.models.load_model('drowsiness_classification.h5')
+  model=tf.keras.models.load_model('/content/drive/MyDrive/CPE019-CPE32S4/drowsiness dataset/drowsiness_classification.h5')
   return model
 model=load_model()
 st.write("""
